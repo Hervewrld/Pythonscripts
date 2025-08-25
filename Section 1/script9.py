@@ -28,3 +28,12 @@ print(config["hostname"]) # Accessing the value using a key
 
 # Output
 # server1.example.com
+
+# Also Dictionary can be used to manage the infrastucture 
+
+servers = {
+    "webserver" : {"ip": "192.168.1.110", "role": "frontend"},
+    "db_server" : {"ip": "192.168.1.210", "role": "database"},
+    "cache_server" : {"ip": "192.168.1.250", "role": "caching"}
+}
+print(servers["webserver"]["role"])
